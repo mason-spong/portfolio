@@ -4,48 +4,49 @@
     box-sizing: border-box;
 }
 
-html {
-    background-color: #22333B;
+.page {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-body {
-    background-color: #3C5A68;
-    width: 1000px;
-    margin: auto;
-
+.section {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-p {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.title {
+    background-color: #03045e;
+    color: white;
 }
 
-h1, h2 {
-    margin: auto;
-    width: fit-content;
+.about {
+    background-color: #023e8a;
 }
 
-.nav-bar ul {
-    list-style-type: none;
-    background-color: #5C8001;
-    overflow: hidden;
+.projects {
+    background-color: #0077b6;
 }
 
-.nav-bar li {
-    float: left;
+.experience {
+    background-color: #0096c7;
 }
 
-.nav-bar li a {
-    display: block;
-    text-align: center;
-    padding: 20px 20px;
-    background-color: #FDB833;
+.contact {
+    background-color: #00b4d8;
 }
 
-.nav-bar li a:hover {
-    background-color: #98473E;
-}
-
-#experience {
-    font-family: 'Courier New', Courier, monospace;
+@media only screen and (min-width: 961px) {
+    .block {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
